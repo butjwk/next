@@ -5,10 +5,8 @@ import Col from 'react-bootstrap/Col';
 
 export default function Footer() {
   return (
-    <Container>
-      <Row>
-        <Col>Footer</Col>
-      </Row>
+    <Container className='border border-info-subtle border-5 rounded-5 bg-info-subtle text-center fixed-bottom'>
+     IFMS-Dourados
     </Container>
   );
 }
