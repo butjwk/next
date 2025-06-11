@@ -32,6 +32,12 @@ export default function Menu() {
               <NavDropdown.Item href="/funcaonext/gssp">GetServerSideProps</NavDropdown.Item>
               <NavDropdown.Item href="/funcaonext/gssp2">GetServerSideProps-2</NavDropdown.Item>
               <NavDropdown.Item href="/funcaonext/gsspcard">GetServerSideProps-Card</NavDropdown.Item>
+              <NavDropdown.Item href="/funcaonext/gsspcardpesquisa">GetServerSideProps-Pesquisa</NavDropdown.Item>
+              <NavDropdown.Item href="/funcaonext/gsspcardentretenimento">GetServerSideProps-Entretenimento</NavDropdown.Item>
+              <NavDropdown.Item href="/funcaonext/gsspcardesportes">GetServerSideProps-Esportes</NavDropdown.Item>
+              <NavDropdown.Item href="/funcaonext/gsspcardcultura">GetServerSideProps-Cultura</NavDropdown.Item>
+              <NavDropdown.Item href="/funcaonext/gsspcardeducacao">GetServerSideProps-Educação</NavDropdown.Item>
+              <NavDropdown.Item href="/funcaonext/gsspcardciencia">GetServerSideProps-Ciência</NavDropdown.Item>
             </NavDropdown>
           </Nav>
         </Navbar.Collapse>
