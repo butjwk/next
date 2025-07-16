@@ -1,19 +1,20 @@
-import Container from 'react-bootstrap/Container';
-import Card from 'react-bootstrap/Card';
-import Col from 'react-bootstrap/Col';
+import { Card, Col } from "react-bootstrap";
 
 export default function Cards(noticia) {
-    return (
+    return <>
         <Col key={noticia.idnoticia}>
             <Card>
-                <Card.Header className="text-center fw-bold bg-info-subtle">{noticia.titulonoticia}</Card.Header>
+                <Card.Header className="text-center fw-bold bg-warning-subtle">
+                    <a href={`/noticias/${noticia.idnoticia}`}>{noticia.titulonoticia}</a>
+                    </Card.Header>
                 <Card.Body>
-                    <Card.Title className="text-capitalize">{noticia.tiponoticia}</Card.Title>
+                    <Card.Title className="text-capitalize">
+                       <a href={`/noticias/tipo/${noticia.tiponoticia}`}>{noticia.tiponoticia}</a> 
+                        </Card.Title>
                     <Card.Text> {noticia.conteudonoticia}</Card.Text>
                 </Card.Body>
                 <Card.Footer>{new Date(noticia.datahoracadastro).toLocaleString("pt-br")}</Card.Footer>
-
             </Card>
         </Col>
-    );
+    </>
 }
