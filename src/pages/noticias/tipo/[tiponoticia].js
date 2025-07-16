@@ -1,5 +1,5 @@
 import { Container, Row } from 'react-bootstrap';
-import Cards from '../../components/cards';
+import Cards from '../../componentes/card';
 export async function getServerSideProps(req) {
   // Fetch data from external API
   const res = await fetch('http://localhost:3000/api/noticias/tipo/'+req.query.tiponoticia)
